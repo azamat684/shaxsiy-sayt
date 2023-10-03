@@ -16,3 +16,5 @@ drf-yasg==1.21.5
 environs==9.5.0
 uvicorn==0.20.0
 virtualenv==20.17.1
+gunicorn
+whitenoice
