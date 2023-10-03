@@ -17,4 +17,4 @@ environs==9.5.0
 uvicorn==0.20.0
 virtualenv==20.17.1
 gunicorn==21.2.0
-whitenoice==6.5.0
+whitenoise==6.5.0
