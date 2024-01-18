@@ -369,7 +369,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #0080ff;
 }
 
 .section-title h2::before {
@@ -404,7 +404,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #0281ff;
 }
 
 .about .content ul {
@@ -425,12 +425,8 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #0563bb;
+  color: #0084ff;
   line-height: 0;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
