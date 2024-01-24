@@ -1,2 +1,2 @@
 # shaxsiy-sayt
-shaxsiy saytim,resume
+shaxsiy saytim,resume, baza sql
