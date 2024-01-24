@@ -329,86 +329,30 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
-
+        <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
         <div class="section-title">
           <h2>Portfolio</h2>
           <p>Har gal yangi nimadir yaratsam shu yerga joylab boraman, va linkham berib boraman `Click here` tugmasini
             bosish orqali uni batafsil tushinib olishingiz mumkin</p>
         </div>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <style>
-          .card {
-            width: 300px;
-            height: 55%;
-            font-size: 16px;
-            transition: transform 0.4s;
-            transition: all ease-in-out 0.5s;
-            background: #fff;
-            border-radius: 3%;
-            border: 2px solid rgb(15, 139, 255);
-          }
-
-          .card ::backdrop {
-            color: #000;
-          }
-
-          .card img {
-            width: 250px;
-            height: 200px;
-          }
-
-          .card body {
-            text-decoration: #000;
-          }
-
-          .card:hover {
-            transform: scale(1.1);
-          }
-        </style>
-        <div class="row row-cols-2 row-cols-md-4 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="{% static 'assets/img/bot.jpg ' %}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <a href="#" class="btn btn-primary" style="text-align: center;">Click here</a>
-              </div>
-
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{% static 'assets/img/bot.jpg ' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-primary" style="text-align: below;">Click here</a>
             </div>
-          </div>''
-          <div class="col">
-            <div class="card h-100">
-              <img src="{% static 'assets/img/bot.jpg ' %}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Click here</a>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="{% static 'assets/img/bot.jpg ' %}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">Last updated 3 mins ago</small>
-              </div>
+
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
+      </div>
+
+      </div>
       </div>
       </div>
     </section><!-- End Portfolio Section -->
@@ -623,12 +567,9 @@
                 <h4>Telefon raqam:</h4>
                 <p>+998 90 707 0418</p>
               </div>
-
             </div>
-
           </div>
           <div class="col-lg-8 mt-5 mt-lg-0">
-
             <form method="post" role="form" class="ContactView">
               {% csrf_token %}
               <div class="row">
@@ -653,9 +594,7 @@
                     <button type="submit" class="btn btn-primary">Send Message</button>
                   </form>
                 </div>
-
               </div>
-
           </div>
     </section>
     <!-- End Contact Section -->
