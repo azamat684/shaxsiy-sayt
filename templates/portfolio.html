@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container" data-aos="fade-up">
+        <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+        <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>Har gal yangi nimadir yaratsam shu yerga joylab boraman, va linkham berib boraman `Click here` tugmasini
+                bosish orqali uni batafsil tushinib olishingiz mumkin</p>
+        </div>
+        <style>
+            .card {
+                height: 100%;
+                border: 1px solid #0a7cee;
+                border-radius: 8px; /* Kichikroq qilish */
+                overflow: hidden; /* Qolgan contentlarni cheklash */
+                margin-bottom: 20px; /* Kartalarni bir-biridan uzoqroq qilish */
+                transition: transform 0.3s ease-in-out; /* Animatsiya o'zgartirish */
+            }
+            
+            .card:hover {
+                transform: scale(1.05); /* Kartani hover bo'lganda kichikroq qilish */
+            }
+        </style>
+        <div class="row border-primary row-cols-1 row-cols-md-3 g-4">
+            {% for portfolio in portfolios %}
+            <div class="col">
+                <div class="card text-primary">
+                    <img src="{{ portfolio.image.url }}" class="card-img-top" alt="...">
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">{{ portfolio.title }}</h5>
+                        <p class="card-text">{{ portfolio.desc }}</p>
+                        <a href="{{ portfolio.url }}" class="btn btn-primary">Button</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">{{ portfolio.updated_at.time }}</small>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+</section><!-- End Portfolio Section -->
+{% endblock content %}

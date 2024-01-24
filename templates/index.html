@@ -327,35 +327,7 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-        <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Har gal yangi nimadir yaratsam shu yerga joylab boraman, va linkham berib boraman `Click here` tugmasini
-            bosish orqali uni batafsil tushinib olishingiz mumkin</p>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="{% static 'assets/img/bot.jpg ' %}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary" style="text-align: below;">Click here</a>
-            </div>
-
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      </div>
-      </div>
-      </div>
-    </section><!-- End Portfolio Section -->
+    {% block content %} {% endblock content %}<!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -571,6 +543,8 @@
           </div>
           <div class="col-lg-8 mt-5 mt-lg-0">
 
+            <!-- templates/index.html -->
+
             <form method="post" role="form" class="IndexView">
               {% csrf_token %}
               <div class="row">
@@ -590,6 +564,7 @@
               </div>
               <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
+
           </div>
         </div>
       </div>
