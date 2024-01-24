@@ -6,9 +6,11 @@ from django.shortcuts import redirect
 def index(request):
     return render(request,"index.html")
 
-class ContactView(TemplateView):
+
+class IndexView(TemplateView):
     template_name = "index.html"
 
     def post(self, request):
+        print('salom')
         send_contact_info_to_telegram_chat(request.POST)
         return redirect("index.html")
